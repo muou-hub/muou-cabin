@@ -118,15 +118,19 @@ function renderSkills() {
 						?`<div style='color:#FFFFFF;text-align:center;'>迴避率變化量：${(skill.ranks[skill.rank-1].miss).toFixed(1)}</div>`:''}
 						${skill.ranks[skill.rank-1].mpv
 						?`<div style='color:#FFFFFF;text-align:center;'>魔力值：${(skill.ranks[skill.rank-1].mpv).toFixed(1)}</div>`:''}
-						${skill.ranks[skill.rank-1].target
-						?`<div style='color:#FFFFFF;text-align:center;'>目標數量：${skill.ranks[skill.rank-1].target}</div>`:''}
 						${skill.ranks[skill.rank-1].defense
 						?`<div style='color:#FFFFFF;text-align:center;'>防禦值變化：${(skill.ranks[skill.rank-1].defense).toFixed(1)}</div>`:''}
+						${skill.ranks[skill.rank-1].hit
+						?`<div style='color:#FFFFFF;text-align:center;'>命中率變化：${(skill.ranks[skill.rank-1].hit).toFixed(1)}</div>`:''}
+						${skill.ranks[skill.rank-1].target
+						?`<div style='color:#FFFFFF;text-align:center;'>目標數量：${skill.ranks[skill.rank-1].target}</div>`:''}
 						
-						${(skill.ranks[skill.rank-1].arrow|| skill.ranks[skill.rank-1].mp||skill.ranks[skill.rank-1].sp)
+						${(skill.ranks[skill.rank-1].arrow|| skill.ranks[skill.rank-1].mp||skill.ranks[skill.rank-1].sp ||skill.ranks[skill.rank-1].hpd)
 						?`<div style='color:#70b9dc;text-align:center;'>▼使用時消耗量▼</div>`:''}
 						${skill.ranks[skill.rank-1].arrow 
 						?`<div style='color:#FFFFFF;text-align:center;'>消耗箭數：${skill.ranks[skill.rank-1].arrow}</div>`:''}
+						${skill.ranks[skill.rank-1].hpd
+						?`<div style='color:#FFFFFF;text-align:center;'>HP消耗量：${skill.ranks[skill.rank-1].hpd}</div>`:''}
 						${skill.ranks[skill.rank-1].mp
 						?`<div style='color:#FFFFFF;text-align:center;'>MP消耗量：${skill.ranks[skill.rank-1].mp}</div>`:''}
 						${skill.ranks[skill.rank-1].sp
@@ -169,6 +173,11 @@ function renderSkills() {
 						  <div style='color:#ffe955;text-align:center;'>功能：奪取HP`:''}
 						${skill.ranks[skill.rank-1].getb
 						?`<div style='color:#ffe955;text-align:center;'>吸收率：${(skill.ranks[skill.rank-1].getb*100).toFixed(2)}%</div>`:''}  
+						${skill.ranks[skill.rank-1].shootv
+						?`<div style='color:#70b9dc;text-align:center;'>▼特殊效果▼</div>
+						  <div style='color:#ffe955;text-align:center;'>功能：射程距離`:''}
+						${skill.ranks[skill.rank-1].shootv
+						?`<div style='color:#ffe955;text-align:center;'>攻擊距離：${(skill.ranks[skill.rank-1].shootv).toFixed(2)}</div>`:''}  
 						  
 						${(skill.ranks[skill.rank-1].defenser || skill.ranks[skill.rank-1].attackr || skill.ranks[skill.rank-1].mpr )
 						?`<div style='color:#70b9dc;text-align:center;'>▼附加效果▼</div>`:''}
@@ -216,25 +225,29 @@ function renderSkills() {
 					?`<div style='color:#FFFFFF;text-align:center;'>迴避率變化量：${(skill.ranks[skill.rank].miss).toFixed(1)}</div>`:''}
 					${skill.ranks[skill.rank].mpv
 					?`<div style='color:#FFFFFF;text-align:center;'>魔力值：${(skill.ranks[skill.rank].mpv).toFixed(1)}</div>`:''}
-					${skill.ranks[skill.rank].target
-					?`<div style='color:#FFFFFF;text-align:center;'>目標數量：${skill.ranks[skill.rank].target}</div>`:''}
 					${skill.ranks[skill.rank].defense
 					?`<div style='color:#FFFFFF;text-align:center;'>防禦值變化：${(skill.ranks[skill.rank].defense).toFixed(1)}</div>`:''}
+					${skill.ranks[skill.rank].hit
+					?`<div style='color:#FFFFFF;text-align:center;'>命中率變化：${(skill.ranks[skill.rank].hit).toFixed(1)}</div>`:''}
+					${skill.ranks[skill.rank].target
+					?`<div style='color:#FFFFFF;text-align:center;'>目標數量：${skill.ranks[skill.rank].target}</div>`:''}
 					
-					${(skill.ranks[skill.rank].arrow || skill.ranks[skill.rank].mp ||skill.ranks[skill.rank].sp)
+					${(skill.ranks[skill.rank].arrow || skill.ranks[skill.rank].mp ||skill.ranks[skill.rank].sp ||skill.ranks[skill.rank].hpd)
 					?`<div style='color:#70b9dc;text-align:center;'>▼使用時消耗量▼</div>`:''}
 					${skill.ranks[skill.rank].arrow 
 					?`<div style='color:#FFFFFF;text-align:center;'>消耗箭數：${skill.ranks[skill.rank].arrow}</div>`:''}
+					${skill.ranks[skill.rank].hpd
+					?`<div style='color:#FFFFFF;text-align:center;'>HP消耗量：${skill.ranks[skill.rank].hpd}</div>`:''}
 					${skill.ranks[skill.rank].mp
 					?`<div style='color:#FFFFFF;text-align:center;'>MP消耗量：${skill.ranks[skill.rank].mp}</div>`:''}
 					${skill.ranks[skill.rank].sp
 					?`<div style='color:#FFFFFF;text-align:center;'>SP消耗量：${skill.ranks[skill.rank].sp}</div>`:''}
 					
 					${(skill.ranks[skill.rank].paradc || skill.ranks[skill.rank].paradr ||  skill.ranks[skill.rank].stopc)
-					?`<div style='color:#ffe955;text-align:center;'>麻痺</div>
-					  <div style='color:#70b9dc;text-align:center;'>▼狀態異常▼</div>`:''}
+					?`<div style='color:#70b9dc;text-align:center;'>▼狀態異常▼</div>`:''}
 					${skill.ranks[skill.rank].paradc 
-					?`<div style='color:#ffe955;text-align:center;'>發生機率：${(skill.ranks[skill.rank].paradc*100).toFixed(1)}</div>`:''}
+					?`<div style='color:#ffe955;text-align:center;'>麻痺</div>
+					<div style='color:#ffe955;text-align:center;'>發生機率：${(skill.ranks[skill.rank].paradc*100).toFixed(1)}</div>`:''}
 					${skill.ranks[skill.rank].paradr 
 					?`<div style='color:#ffe955;text-align:center;'>延遲變化率：${skill.ranks[skill.rank].paradr}</div>`:''}
 					${skill.ranks[skill.rank].stopc 
@@ -267,6 +280,11 @@ function renderSkills() {
 					  <div style='color:#ffe955;text-align:center;'>功能：奪取HP`:''}
 					${skill.ranks[skill.rank].getb
 					?`<div style='color:#ffe955;text-align:center;'>吸收率：${(skill.ranks[skill.rank].getb*100).toFixed(2)}%</div>`:''}
+					${skill.ranks[skill.rank].shootv
+					?`<div style='color:#70b9dc;text-align:center;'>▼特殊效果▼</div>
+					  <div style='color:#ffe955;text-align:center;'>功能：射程距離`:''}
+					${skill.ranks[skill.rank].shootv
+					?`<div style='color:#ffe955;text-align:center;'>攻擊距離：${(skill.ranks[skill.rank].shootv).toFixed(2)}</div>`:''} 
 					
 					${(skill.ranks[skill.rank].defenser || skill.ranks[skill.rank].attackr || skill.ranks[skill.rank].mpr)
 					?`<div style='color:#70b9dc;text-align:center;'>▼附加效果▼</div>`:''}
@@ -303,14 +321,15 @@ renderSkills();
 function findMaxPointByType(){
 	 skills.forEach(ss => {
 		 if(ss.rank >0 && ss.rank < ss.max){
-			 if(ss.ranks[ss.rank].agipoint){
-				 maxAgi=( ss.ranks[ss.rank].agipoint > maxAgi) ? ss.ranks[ss.rank].agipoint : maxAgi;
+			 const i =ss.rank-1;
+			 if(ss.ranks[i].agipoint){
+				 maxAgi=( ss.ranks[i].agipoint > maxAgi) ? ss.ranks[i].agipoint : maxAgi;
 			 };
-			 if(ss.ranks[ss.rank].strpoint){
-				 maxStr=( ss.ranks[ss.rank].strpoint > maxStr) ? ss.ranks[ss.rank].strpoint : maxStr;
+			 if(ss.ranks[i].strpoint){
+				 maxStr=( ss.ranks[i].strpoint > maxStr) ? ss.ranks[i].strpoint : maxStr;
 			 };
-			 if(ss.ranks[ss.rank].intpoint){
-				 maxInt=( ss.ranks[ss.rank].intpoint > maxInt) ? ss.ranks[ss.rank].intpoint : maxInt;
+			 if(ss.ranks[i].intpoint){
+				 maxInt=( ss.ranks[i].intpoint > maxInt) ? ss.ranks[i].intpoint : maxInt;
 			 };
 		 }
 	});
