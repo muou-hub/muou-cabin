@@ -944,7 +944,7 @@ let skills = [
 		{lv:203  ,cost: 1,strpoint:488  ,hp:-3229  ,target:10,range:85 ,angle:180 ,delay:7.2 ,pulld:2 ,pullc:0.20 ,mp:16 ,sp:30 }                                                                            
         ]
     },
-	{//精神
+	{//精神 震波
         id: 301,
         pro: "Bow",
         type: "Int",
@@ -971,7 +971,7 @@ let skills = [
 		{lv: 23,cost: 1, intpoint: 59 ,hp: -96 ,target: 10 ,range: 20 ,angle: 360 ,delay: 0.8 ,pulld: 1,pullc: 0.86 ,mp: 5, sp: 5,distance:20 ,pass:1 ,cnt:1}
         ]                                                                                                
     },
-	{
+	{//血箭
         id: 302,
         pro: "Bow",
         type: "Int",
@@ -987,18 +987,18 @@ let skills = [
         url: "skill_images/Bow/Int/017血箭.jpg",
         detail: "在箭矢上塗上自己的血來提升攻擊力。",
         ranks: [
-		{lv: 17 ,cost: 2, intpoint: 62 ,defense:2  ,attackr:0.10 ,target: 1  ,range: 30,keep:40  ,delay: 10 ,mp: 5, sp: 1 ,needlv:2}, 
-		{lv: 17 ,cost: 1, intpoint: 67 ,defense:2  ,attackr:0.11 ,target: 2  ,range: 30,keep:50  ,delay: 10 ,mp: 5, sp: 1 ,needlv:2},
-		{lv: 17 ,cost: 1, intpoint: 72 ,defense:2  ,attackr:0.12 ,target: 2  ,range: 30,keep:60  ,delay: 10 ,mp: 5, sp: 1 ,needlv:2}, 
-		{lv: 17 ,cost: 1, intpoint: 78 ,defense:2  ,attackr:0.13 ,target: 2  ,range: 30,keep:70  ,delay: 10 ,mp: 5, sp: 1 ,needlv:2}, 
-		{lv: 17 ,cost: 1, intpoint: 83 ,defense:2  ,attackr:0.14 ,target: 2  ,range: 30,keep:80  ,delay: 10 ,mp: 5, sp: 2 ,needlv:2}, 
-		{lv: 17 ,cost: 1, intpoint: 88 ,defense:2  ,attackr:0.16 ,target: 2  ,range: 30,keep:90  ,delay: 10 ,mp: 5, sp: 2 ,needlv:2}, 
-		{lv: 17 ,cost: 1, intpoint: 93 ,defense:2  ,attackr:0.18 ,target: 2  ,range: 30,keep:100 ,delay: 10 ,mp: 5, sp: 2 ,needlv:2}, 
-		{lv: 17 ,cost: 1, intpoint: 99 ,defense:2  ,attackr:0.20 ,target: 2  ,range: 30,keep:110 ,delay: 10 ,mp: 5, sp: 2 ,needlv:2}, 
-		{lv: 17 ,cost: 1, intpoint:104 ,defense:2  ,attackr:0.22 ,target: 2  ,range: 30,keep:120 ,delay: 10 ,mp: 5, sp: 2 ,needlv:2}
+		{lv: 17 ,cost: 2, intpoint: 62 ,defense:2  ,attackr:0.10 ,target: 1  ,range: 30,keep:40  ,delay: 10 ,mp: 5, sp: 1 ,needlv:2 ,pass:1 ,cnt:1 ,hpd:14}, 
+		{lv: 17 ,cost: 1, intpoint: 67 ,defense:2  ,attackr:0.11 ,target: 2  ,range: 30,keep:50  ,delay: 10 ,mp: 5, sp: 1 ,needlv:2 ,pass:1 ,cnt:1 ,hpd:14},
+		{lv: 17 ,cost: 1, intpoint: 72 ,defense:2  ,attackr:0.12 ,target: 2  ,range: 30,keep:60  ,delay: 10 ,mp: 5, sp: 1 ,needlv:2 ,pass:1 ,cnt:1 ,hpd:13}, 
+		{lv: 17 ,cost: 1, intpoint: 78 ,defense:3  ,attackr:0.13 ,target: 2  ,range: 30,keep:70  ,delay: 10 ,mp: 5, sp: 1 ,needlv:2 ,pass:1 ,cnt:1 ,hpd:13}, 
+		{lv: 17 ,cost: 1, intpoint: 83 ,defense:3  ,attackr:0.14 ,target: 2  ,range: 30,keep:80  ,delay: 10 ,mp: 5, sp: 2 ,needlv:2 ,pass:1 ,cnt:1 ,hpd:12}, 
+		{lv: 17 ,cost: 1, intpoint: 88 ,defense:3  ,attackr:0.16 ,target: 2  ,range: 30,keep:90  ,delay: 10 ,mp: 5, sp: 2 ,needlv:2 ,pass:1 ,cnt:1 ,hpd:12}, 
+		{lv: 17 ,cost: 1, intpoint: 93 ,defense:4  ,attackr:0.18 ,target: 2  ,range: 30,keep:100 ,delay: 10 ,mp: 5, sp: 2 ,needlv:2 ,pass:1 ,cnt:1 ,hpd:11}, 
+		{lv: 17 ,cost: 1, intpoint: 99 ,defense:4  ,attackr:0.20 ,target: 2  ,range: 30,keep:110 ,delay: 10 ,mp: 5, sp: 2 ,needlv:2 ,pass:1 ,cnt:1 ,hpd:11}, 
+		{lv: 17 ,cost: 1, intpoint:104 ,defense:4  ,attackr:0.22 ,target: 2  ,range: 30,keep:120 ,delay: 10 ,mp: 5, sp: 2 ,needlv:2 ,pass:1 ,cnt:1 ,hpd:10}
         ]                                                                                                
     },
-	{
+	{//靈箭
         id: 303,
         pro: "Bow",
         type: "Int",
@@ -1014,18 +1014,18 @@ let skills = [
         url: "skill_images/Bow/Int/027靈箭.jpg",
         detail: "將氣轉換成箭來發射",
         ranks: [
-		{lv: 27 ,cost: 3, intpoint:  88 ,hp:-201 ,target: 1  ,range: 30 ,delay: 0.80 ,pulld:2 ,purllc:0.10  ,mp: 10, sp: 8 }, 
-		{lv: 27 ,cost: 1, intpoint:  93 ,hp:-207 ,target: 1  ,range: 30 ,delay: 0.75 ,pulld:2 ,purllc:0.10  ,mp: 10, sp: 8 },
-		{lv: 27 ,cost: 1, intpoint:  99 ,hp:-213 ,target: 1  ,range: 30 ,delay: 0.70 ,pulld:2 ,purllc:0.10  ,mp: 10, sp: 8 }, 
-		{lv: 27 ,cost: 1, intpoint: 104 ,hp:-219 ,target: 1  ,range: 30 ,delay: 0.65 ,pulld:2 ,purllc:0.10  ,mp: 10, sp: 9 }, 
-		{lv: 27 ,cost: 1, intpoint: 109 ,hp:-225 ,target: 1  ,range: 30 ,delay: 0.60 ,pulld:2 ,purllc:0.10  ,mp: 10, sp: 9 }, 
-		{lv: 27 ,cost: 1, intpoint: 115 ,hp:-231 ,target: 1  ,range: 30 ,delay: 0.55 ,pulld:2 ,purllc:0.10  ,mp: 10, sp: 9 }, 
-		{lv: 27 ,cost: 1, intpoint: 120 ,hp:-237 ,target: 1  ,range: 30 ,delay: 0.50 ,pulld:2 ,purllc:0.10  ,mp: 10, sp:10 }, 
-		{lv: 27 ,cost: 1, intpoint: 125 ,hp:-243 ,target: 1  ,range: 30 ,delay: 0.45 ,pulld:2 ,purllc:0.10  ,mp: 10, sp:10 }, 
-		{lv: 27 ,cost: 1, intpoint: 130 ,hp:-249 ,target: 1  ,range: 30 ,delay: 0.40 ,pulld:2 ,purllc:0.10  ,mp: 10, sp:10 }
+		{lv: 27 ,cost: 3, intpoint:  88 ,hp:-201 ,target: 1  ,range: 30 ,delay: 0.80 ,pulld:1 ,pullc:0.10  ,mp: 10, sp: 8 , distance:70 ,cnt:1}, 
+		{lv: 27 ,cost: 1, intpoint:  93 ,hp:-207 ,target: 1  ,range: 30 ,delay: 0.75 ,pulld:1 ,pullc:0.10  ,mp: 10, sp: 8 , distance:70 ,cnt:1},
+		{lv: 27 ,cost: 1, intpoint:  99 ,hp:-213 ,target: 1  ,range: 30 ,delay: 0.70 ,pulld:1 ,pullc:0.10  ,mp: 10, sp: 8 , distance:70 ,cnt:1}, 
+		{lv: 27 ,cost: 1, intpoint: 104 ,hp:-219 ,target: 1  ,range: 30 ,delay: 0.65 ,pulld:1 ,pullc:0.10  ,mp: 10, sp: 9 , distance:70 ,cnt:1}, 
+		{lv: 27 ,cost: 1, intpoint: 109 ,hp:-225 ,target: 1  ,range: 30 ,delay: 0.60 ,pulld:1 ,pullc:0.10  ,mp: 10, sp: 9 , distance:70 ,cnt:1}, 
+		{lv: 27 ,cost: 1, intpoint: 115 ,hp:-231 ,target: 1  ,range: 30 ,delay: 0.55 ,pulld:1 ,pullc:0.10  ,mp: 10, sp: 9 , distance:70 ,cnt:1}, 
+		{lv: 27 ,cost: 1, intpoint: 120 ,hp:-237 ,target: 1  ,range: 30 ,delay: 0.50 ,pulld:1 ,pullc:0.10  ,mp: 10, sp:10 , distance:70 ,cnt:1}, 
+		{lv: 27 ,cost: 1, intpoint: 125 ,hp:-243 ,target: 1  ,range: 30 ,delay: 0.45 ,pulld:1 ,pullc:0.10  ,mp: 10, sp:10 , distance:70 ,cnt:1}, 
+		{lv: 27 ,cost: 1, intpoint: 130 ,hp:-249 ,target: 1  ,range: 30 ,delay: 0.40 ,pulld:1 ,pullc:0.10  ,mp: 10, sp:10 , distance:70 ,cnt:1}
         ]                                                                                                
     },
-	{
+	{//靈射
         id: 304,
         pro: "Bow",
         type: "Int",
@@ -1041,18 +1041,18 @@ let skills = [
         url: "skill_images/Bow/Int/027靈射.jpg",
         detail: "將氣轉換成箭來發射",
         ranks: [
-		{lv: 27 ,cost: 3, intpoint:  88 ,hp:-172 ,target: 1  ,range: 30 ,delay: 0.80 ,mp: 10, sp: 8 }, 
-		{lv: 27 ,cost: 1, intpoint:  93 ,hp:-178 ,target: 1  ,range: 30 ,delay: 0.75 ,mp: 10, sp: 8 },
-		{lv: 27 ,cost: 1, intpoint:  99 ,hp:-184 ,target: 1  ,range: 30 ,delay: 0.70 ,mp: 10, sp: 8 }, 
-		{lv: 27 ,cost: 1, intpoint: 104 ,hp:-190 ,target: 1  ,range: 30 ,delay: 0.65 ,mp: 10, sp: 9 }, 
-		{lv: 27 ,cost: 1, intpoint: 109 ,hp:-196 ,target: 1  ,range: 30 ,delay: 0.60 ,mp: 10, sp: 9 }, 
-		{lv: 27 ,cost: 1, intpoint: 115 ,hp:-202 ,target: 1  ,range: 30 ,delay: 0.55 ,mp: 10, sp: 9 }, 
-		{lv: 27 ,cost: 1, intpoint: 120 ,hp:-208 ,target: 1  ,range: 30 ,delay: 0.50 ,mp: 10, sp:10 }, 
-		{lv: 27 ,cost: 1, intpoint: 125 ,hp:-214 ,target: 1  ,range: 30 ,delay: 0.45 ,mp: 10, sp:10 }, 
-		{lv: 27 ,cost: 1, intpoint: 130 ,hp:-220 ,target: 1  ,range: 30 ,delay: 0.40 ,mp: 10, sp:10 }
+		{lv: 27 ,cost: 3, intpoint:  88 ,hp:-172 ,target: 1 ,range: 30 ,delay: 0.80 ,mp: 10, sp: 8 ,distance:70 ,cnt:1 ,arrow:1 ,pulld:1 ,pullc:0.40}, 
+		{lv: 27 ,cost: 1, intpoint:  93 ,hp:-178 ,target: 1 ,range: 30 ,delay: 0.80 ,mp: 10, sp: 8 ,distance:70 ,cnt:1 ,arrow:1 ,pulld:1 ,pullc:0.40},
+		{lv: 27 ,cost: 1, intpoint:  99 ,hp:-184 ,target: 1 ,range: 30 ,delay: 0.70 ,mp: 10, sp: 8 ,distance:70 ,cnt:1 ,arrow:1 ,pulld:1 ,pullc:0.40}, 
+		{lv: 27 ,cost: 1, intpoint: 104 ,hp:-190 ,target: 1 ,range: 30 ,delay: 0.60 ,mp: 10, sp: 9 ,distance:70 ,cnt:1 ,arrow:1 ,pulld:1 ,pullc:0.40}, 
+		{lv: 27 ,cost: 1, intpoint: 109 ,hp:-196 ,target: 1 ,range: 30 ,delay: 0.60 ,mp: 10, sp: 9 ,distance:70 ,cnt:1 ,arrow:1 ,pulld:1 ,pullc:0.40}, 
+		{lv: 27 ,cost: 1, intpoint: 115 ,hp:-202 ,target: 1 ,range: 30 ,delay: 0.60 ,mp: 10, sp: 9 ,distance:70 ,cnt:1 ,arrow:1 ,pulld:1 ,pullc:0.40}, 
+		{lv: 27 ,cost: 1, intpoint: 120 ,hp:-208 ,target: 1 ,range: 30 ,delay: 0.50 ,mp: 10, sp:10 ,distance:70 ,cnt:1 ,arrow:1 ,pulld:1 ,pullc:0.40}, 
+		{lv: 27 ,cost: 1, intpoint: 125 ,hp:-214 ,target: 1 ,range: 30 ,delay: 0.40 ,mp: 10, sp:10 ,distance:70 ,cnt:1 ,arrow:1 ,pulld:1 ,pullc:0.40}, 
+		{lv: 27 ,cost: 1, intpoint: 130 ,hp:-220 ,target: 1 ,range: 30 ,delay: 0.40 ,mp: 10, sp:10 ,distance:70 ,cnt:1 ,arrow:1 ,pulld:1 ,pullc:0.40}
         ]                                                                                                
     },
-	{
+	{//千里眼
         id: 305,
         pro: "Bow",
         type: "Int",
@@ -1068,15 +1068,15 @@ let skills = [
         url: "skill_images/Bow/Int/037千里眼.jpg",
         detail: "增加射擊的距離",
         ranks: [
-		{lv: 37 ,cost: 4, intpoint: 115 ,hit:1 ,target: 1 ,shootv: 4 }, 
-		{lv: 37 ,cost: 1, intpoint: 120 ,hit:2 ,target: 2 ,shootv: 6 },
-		{lv: 37 ,cost: 1, intpoint: 125 ,hit:3 ,target: 2 ,shootv: 8 }, 
-		{lv: 37 ,cost: 1, intpoint: 130 ,hit:4 ,target: 2 ,shootv: 1 }, 
-		{lv: 37 ,cost: 1, intpoint: 136 ,hit:5 ,target: 2 ,shootv: 1 }, 
-		{lv: 37 ,cost: 1, intpoint: 141 ,hit:6 ,target: 2 ,shootv: 1 }, 
-		{lv: 37 ,cost: 1, intpoint: 146 ,hit:7 ,target: 2 ,shootv: 1 }, 
-		{lv: 37 ,cost: 1, intpoint: 152 ,hit:8 ,target: 2 ,shootv: 1 }, 
-		{lv: 37 ,cost: 1, intpoint: 157 ,hit:9 ,target: 2 ,shootv: 2 }
+		{lv: 37 ,cost: 4, intpoint: 115 ,hit:1 ,shootv: 4 ,needlv:3 }, 
+		{lv: 37 ,cost: 1, intpoint: 120 ,hit:2 ,shootv: 6 ,needlv:3 },
+		{lv: 37 ,cost: 1, intpoint: 125 ,hit:3 ,shootv: 8 ,needlv:3 }, 
+		{lv: 37 ,cost: 1, intpoint: 130 ,hit:4 ,shootv:10 ,needlv:3 }, 
+		{lv: 37 ,cost: 1, intpoint: 136 ,hit:5 ,shootv:12 ,needlv:3 }, 
+		{lv: 37 ,cost: 1, intpoint: 141 ,hit:6 ,shootv:14 ,needlv:3 }, 
+		{lv: 37 ,cost: 1, intpoint: 146 ,hit:7 ,shootv:16 ,needlv:3 }, 
+		{lv: 37 ,cost: 1, intpoint: 152 ,hit:8 ,shootv:18 ,needlv:3 }, 
+		{lv: 37 ,cost: 1, intpoint: 157 ,hit:9 ,shootv:20 ,needlv:3 }
         ]                                                                                                
     },
 	{//吸血鬼之箭
@@ -1106,7 +1106,7 @@ let skills = [
 		{lv: 47 ,cost: 1, intpoint:183 ,hp:-456 ,target: 1 ,delay: 2.7 ,getb:0.38  ,mp: 15, sp: 15 ,needlv:4 ,distance:60 ,cnt:1 ,arrow:1}
         ]                                                                                                
     },
-	{
+	{//輻射
         id: 307,
         pro: "Bow",
         type: "Int",
@@ -1122,15 +1122,15 @@ let skills = [
         url: "skill_images/Bow/Int/067輻射.jpg",
         detail: "可同時針對前方90度範圍內所有目標，並給予傷害",
         ranks: [
-		{lv: 67 ,cost: 7, intpoint: 194 ,hp:-627 ,target: 9 ,range: 60 ,angle:90 ,delay: 3.5 ,pulld:2 ,pullc:0.20 ,mp: 20, sp: 17 }, 
-		{lv: 67 ,cost: 1, intpoint: 199 ,hp:-637 ,target: 9 ,range: 60 ,angle:90 ,delay: 3.4 ,pulld:2 ,pullc:0.20 ,mp: 20, sp: 17 },
-		{lv: 67 ,cost: 1, intpoint: 204 ,hp:-647 ,target: 9 ,range: 60 ,angle:90 ,delay: 3.3 ,pulld:2 ,pullc:0.20 ,mp: 20, sp: 17 }, 
-		{lv: 67 ,cost: 1, intpoint: 210 ,hp:-657 ,target: 9 ,range: 60 ,angle:90 ,delay: 3.2 ,pulld:2 ,pullc:0.20 ,mp: 20, sp: 18 }, 
-		{lv: 67 ,cost: 1, intpoint: 215 ,hp:-667 ,target: 9 ,range: 60 ,angle:90 ,delay: 3.1 ,pulld:2 ,pullc:0.20 ,mp: 20, sp: 18 }, 
-		{lv: 67 ,cost: 1, intpoint: 220 ,hp:-677 ,target: 9 ,range: 60 ,angle:90 ,delay: 3.0 ,pulld:2 ,pullc:0.20 ,mp: 20, sp: 18 }, 
-		{lv: 67 ,cost: 1, intpoint: 225 ,hp:-687 ,target: 9 ,range: 60 ,angle:90 ,delay: 2.9 ,pulld:2 ,pullc:0.20 ,mp: 20, sp: 19 }, 
-		{lv: 67 ,cost: 1, intpoint: 231 ,hp:-697 ,target: 9 ,range: 60 ,angle:90 ,delay: 2.8 ,pulld:2 ,pullc:0.20 ,mp: 20, sp: 19 }, 
-		{lv: 67 ,cost: 1, intpoint: 236 ,hp:-707 ,target: 9 ,range: 60 ,angle:90 ,delay: 2.7 ,pulld:2 ,pullc:0.20 ,mp: 20, sp: 19 }
+		{lv: 67 ,cost: 7, intpoint: 194 ,hp:-627 ,target: 9 ,range: 60 ,angle:90 ,delay: 3.5 ,pulld:1 ,pullc:0.20 ,mp: 20, sp: 17 ,cnt:1 ,distance:70 ,arrow:1, needlv:3}, 
+		{lv: 67 ,cost: 1, intpoint: 199 ,hp:-637 ,target: 9 ,range: 60 ,angle:90 ,delay: 3.4 ,pulld:1 ,pullc:0.20 ,mp: 20, sp: 17 ,cnt:1 ,distance:70 ,arrow:1, needlv:3},
+		{lv: 67 ,cost: 1, intpoint: 204 ,hp:-647 ,target: 9 ,range: 60 ,angle:90 ,delay: 3.3 ,pulld:1 ,pullc:0.20 ,mp: 20, sp: 17 ,cnt:1 ,distance:70 ,arrow:1, needlv:3}, 
+		{lv: 67 ,cost: 1, intpoint: 210 ,hp:-657 ,target: 9 ,range: 60 ,angle:90 ,delay: 3.2 ,pulld:1 ,pullc:0.20 ,mp: 20, sp: 18 ,cnt:1 ,distance:70 ,arrow:1, needlv:3}, 
+		{lv: 67 ,cost: 1, intpoint: 215 ,hp:-667 ,target: 9 ,range: 60 ,angle:90 ,delay: 3.1 ,pulld:1 ,pullc:0.20 ,mp: 20, sp: 18 ,cnt:1 ,distance:70 ,arrow:1, needlv:3}, 
+		{lv: 67 ,cost: 1, intpoint: 220 ,hp:-677 ,target: 9 ,range: 60 ,angle:90 ,delay: 3.0 ,pulld:1 ,pullc:0.20 ,mp: 20, sp: 18 ,cnt:1 ,distance:70 ,arrow:1, needlv:3}, 
+		{lv: 67 ,cost: 1, intpoint: 225 ,hp:-687 ,target: 9 ,range: 60 ,angle:90 ,delay: 2.9 ,pulld:1 ,pullc:0.20 ,mp: 20, sp: 19 ,cnt:1 ,distance:70 ,arrow:1, needlv:3}, 
+		{lv: 67 ,cost: 1, intpoint: 231 ,hp:-697 ,target: 9 ,range: 60 ,angle:90 ,delay: 2.8 ,pulld:1 ,pullc:0.20 ,mp: 20, sp: 19 ,cnt:1 ,distance:70 ,arrow:1, needlv:3}, 
+		{lv: 67 ,cost: 1, intpoint: 236 ,hp:-707 ,target: 9 ,range: 60 ,angle:90 ,delay: 2.7 ,pulld:1 ,pullc:0.20 ,mp: 20, sp: 19 ,cnt:1 ,distance:70 ,arrow:1, needlv:3}
         ]                                                                                                
     },
 	{//靈氣箭
@@ -1203,15 +1203,15 @@ let skills = [
         url: "skill_images/Bow/Int/107大地箭氣.jpg",
         detail: "朝著地面發射氣箭,用產生的土與石頭來攻擊周圍的怪物",
         ranks: [
-		{lv: 107 ,cost:12, intpoint:299 ,hp:-1232 ,target: 4  ,range: 70,angle:360 ,delay: 12.0 ,pulld:1 ,pullc:0.40 ,mp: 35, sp: 27 }, 
-		{lv: 107 ,cost: 1, intpoint:305 ,hp:-1246 ,target: 4  ,range: 70,angle:360 ,delay: 11.4 ,pulld:1 ,pullc:0.40 ,mp: 35, sp: 27 },
-		{lv: 107 ,cost: 1, intpoint:310 ,hp:-1260 ,target: 5  ,range: 70,angle:360 ,delay: 10.8 ,pulld:1 ,pullc:0.40 ,mp: 35, sp: 27 }, 
-		{lv: 107 ,cost: 1, intpoint:315 ,hp:-1274 ,target: 5  ,range: 70,angle:360 ,delay: 10.2 ,pulld:1 ,pullc:0.40 ,mp: 35, sp: 28 }, 
-		{lv: 107 ,cost: 1, intpoint:320 ,hp:-1288 ,target: 6  ,range: 70,angle:360 ,delay: 9.6  ,pulld:1 ,pullc:0.40 ,mp: 35, sp: 28 }, 
-		{lv: 107 ,cost: 1, intpoint:326 ,hp:-1302 ,target: 6  ,range: 70,angle:360 ,delay: 9.0  ,pulld:1 ,pullc:0.40 ,mp: 35, sp: 28 }, 
-		{lv: 107 ,cost: 1, intpoint:331 ,hp:-1316 ,target: 7  ,range: 70,angle:360 ,delay: 8.4  ,pulld:1 ,pullc:0.40 ,mp: 35, sp: 29 }, 
-		{lv: 107 ,cost: 1, intpoint:336 ,hp:-1330 ,target: 7  ,range: 70,angle:360 ,delay: 7.8  ,pulld:1 ,pullc:0.40 ,mp: 35, sp: 29 }, 
-		{lv: 107 ,cost: 1, intpoint:342 ,hp:-1344 ,target: 8  ,range: 70,angle:360 ,delay: 7.2  ,pulld:1 ,pullc:0.40 ,mp: 35, sp: 29 }
+		{lv: 107 ,cost:12, intpoint:299 ,hp:-1232 ,target: 4  ,range: 70,angle:360 ,delay: 12.0 ,pulld:1 ,pullc:0.40 ,mp: 35, sp: 27 ,distance:70 ,cnt:1 ,arrow:1 ,needlv:2}, 
+		{lv: 107 ,cost: 1, intpoint:305 ,hp:-1246 ,target: 4  ,range: 70,angle:360 ,delay: 11.4 ,pulld:1 ,pullc:0.40 ,mp: 35, sp: 27 ,distance:70 ,cnt:1 ,arrow:1 ,needlv:2},
+		{lv: 107 ,cost: 1, intpoint:310 ,hp:-1260 ,target: 5  ,range: 70,angle:360 ,delay: 10.8 ,pulld:1 ,pullc:0.40 ,mp: 35, sp: 27 ,distance:70 ,cnt:1 ,arrow:1 ,needlv:2}, 
+		{lv: 107 ,cost: 1, intpoint:315 ,hp:-1274 ,target: 5  ,range: 70,angle:360 ,delay: 10.2 ,pulld:1 ,pullc:0.40 ,mp: 35, sp: 28 ,distance:70 ,cnt:1 ,arrow:1 ,needlv:2}, 
+		{lv: 107 ,cost: 1, intpoint:320 ,hp:-1288 ,target: 6  ,range: 70,angle:360 ,delay: 9.6  ,pulld:1 ,pullc:0.40 ,mp: 35, sp: 28 ,distance:70 ,cnt:1 ,arrow:1 ,needlv:2}, 
+		{lv: 107 ,cost: 1, intpoint:326 ,hp:-1302 ,target: 6  ,range: 70,angle:360 ,delay: 9.0  ,pulld:1 ,pullc:0.40 ,mp: 35, sp: 28 ,distance:70 ,cnt:1 ,arrow:1 ,needlv:2}, 
+		{lv: 107 ,cost: 1, intpoint:331 ,hp:-1316 ,target: 7  ,range: 70,angle:360 ,delay: 8.4  ,pulld:1 ,pullc:0.40 ,mp: 35, sp: 29 ,distance:70 ,cnt:1 ,arrow:1 ,needlv:2}, 
+		{lv: 107 ,cost: 1, intpoint:336 ,hp:-1330 ,target: 7  ,range: 70,angle:360 ,delay: 7.8  ,pulld:1 ,pullc:0.40 ,mp: 35, sp: 29 ,distance:70 ,cnt:1 ,arrow:1 ,needlv:2}, 
+		{lv: 107 ,cost: 1, intpoint:342 ,hp:-1344 ,target: 8  ,range: 70,angle:360 ,delay: 7.2  ,pulld:1 ,pullc:0.40 ,mp: 35, sp: 29 ,distance:70 ,cnt:1 ,arrow:1 ,needlv:2}
         ]                                                                                                
     },
 	{//煉獄幻覺
@@ -1230,15 +1230,15 @@ let skills = [
         url: "skill_images/Bow/Int/117煉獄幻覺.jpg",
         detail: "會同時對目標的周圍產生影響，為扭曲空間的攻擊",
         ranks: [
-		{lv: 117 ,cost:13, intpoint: 326 ,hp:-1411 ,target: 4 ,range:360 ,delay: 12.0 ,pulld:1 ,pullc:0.40 ,mp:40, sp: 30}, 
-		{lv: 117 ,cost: 1, intpoint: 331 ,hp:-1426 ,target: 5 ,range:360 ,delay: 11.5 ,pulld:1 ,pullc:0.40 ,mp:40, sp: 30},
-		{lv: 117 ,cost: 1, intpoint: 336 ,hp:-1441 ,target: 6 ,range:360 ,delay: 11.0 ,pulld:1 ,pullc:0.40 ,mp:40, sp: 30}, 
-		{lv: 117 ,cost: 1, intpoint: 342 ,hp:-1456 ,target: 7 ,range:360 ,delay: 10.5 ,pulld:1 ,pullc:0.40 ,mp:40, sp: 31}, 
-		{lv: 117 ,cost: 1, intpoint: 347 ,hp:-1471 ,target: 8 ,range:360 ,delay: 10.0 ,pulld:1 ,pullc:0.40 ,mp:40, sp: 31}, 
-		{lv: 117 ,cost: 1, intpoint: 352 ,hp:-1486 ,target: 9 ,range:360 ,delay: 9.5  ,pulld:1 ,pullc:0.40 ,mp:40, sp: 31}, 
-		{lv: 117 ,cost: 1, intpoint: 357 ,hp:-1501 ,target:10 ,range:360 ,delay: 9.0  ,pulld:1 ,pullc:0.40 ,mp:40, sp: 32}, 
-		{lv: 117 ,cost: 1, intpoint: 363 ,hp:-1516 ,target:10 ,range:360 ,delay: 8.5  ,pulld:1 ,pullc:0.40 ,mp:40, sp: 32}, 
-		{lv: 117 ,cost: 1, intpoint: 368 ,hp:-1531 ,target:10 ,range:360 ,delay: 8.0  ,pulld:1 ,pullc:0.40 ,mp:40, sp: 32}
+		{lv: 117 ,cost:13, intpoint: 326 ,hp:-1411 ,target: 4 ,range:60 ,delay: 12.0 ,pulld:1 ,pullc:0.40 ,mp:40, sp: 30 ,distance:70 ,cnt:1 ,arrow:1 ,needlv:2 ,angle:360 ,stopc:0.10}, 
+		{lv: 117 ,cost: 1, intpoint: 331 ,hp:-1426 ,target: 5 ,range:61 ,delay: 11.5 ,pulld:1 ,pullc:0.40 ,mp:40, sp: 30 ,distance:70 ,cnt:1 ,arrow:1 ,needlv:2 ,angle:360 ,stopc:0.15},
+		{lv: 117 ,cost: 1, intpoint: 336 ,hp:-1441 ,target: 6 ,range:62 ,delay: 11.0 ,pulld:1 ,pullc:0.40 ,mp:40, sp: 30 ,distance:70 ,cnt:1 ,arrow:1 ,needlv:2 ,angle:360 ,stopc:0.20}, 
+		{lv: 117 ,cost: 1, intpoint: 342 ,hp:-1456 ,target: 7 ,range:63 ,delay: 10.5 ,pulld:1 ,pullc:0.40 ,mp:40, sp: 31 ,distance:70 ,cnt:1 ,arrow:1 ,needlv:2 ,angle:360 ,stopc:0.25}, 
+		{lv: 117 ,cost: 1, intpoint: 347 ,hp:-1471 ,target: 8 ,range:64 ,delay: 10.0 ,pulld:1 ,pullc:0.40 ,mp:40, sp: 31 ,distance:70 ,cnt:1 ,arrow:1 ,needlv:2 ,angle:360 ,stopc:0.30}, 
+		{lv: 117 ,cost: 1, intpoint: 352 ,hp:-1486 ,target: 9 ,range:65 ,delay: 9.5  ,pulld:1 ,pullc:0.40 ,mp:40, sp: 31 ,distance:70 ,cnt:1 ,arrow:1 ,needlv:2 ,angle:360 ,stopc:0.35}, 
+		{lv: 117 ,cost: 1, intpoint: 357 ,hp:-1501 ,target:10 ,range:66 ,delay: 9.0  ,pulld:1 ,pullc:0.40 ,mp:40, sp: 32 ,distance:70 ,cnt:1 ,arrow:1 ,needlv:2 ,angle:360 ,stopc:0.40}, 
+		{lv: 117 ,cost: 1, intpoint: 363 ,hp:-1516 ,target:10 ,range:67 ,delay: 8.5  ,pulld:1 ,pullc:0.40 ,mp:40, sp: 32 ,distance:70 ,cnt:1 ,arrow:1 ,needlv:2 ,angle:360 ,stopc:0.45}, 
+		{lv: 117 ,cost: 1, intpoint: 368 ,hp:-1531 ,target:10 ,range:68 ,delay: 8.0  ,pulld:1 ,pullc:0.40 ,mp:40, sp: 32 ,distance:70 ,cnt:1 ,arrow:1 ,needlv:2 ,angle:360 ,stopc:0.50}
         ]                                                                                                
     },
 	{//惡魔之吻
@@ -1545,7 +1545,7 @@ let skills = [
         cast: "被動",
         needid:null ,
         equipment: "弓",
-        name: "強化體力1級(消)",
+        name: "強化體力1級(被)",
         url: "skill_images/Bow/Com/030強化體力1級.jpg",
         detail: "提升HP上限",
         ranks: [
