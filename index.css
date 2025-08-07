@@ -78,6 +78,7 @@
     }
 .contents{
 	background: #333333;
+	 overflow: auto;
 }	
 .pages {
     display: none;
