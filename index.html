@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>小木屋-首頁</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+ <div class="sidebar">
+    <div class="tab active"page="page1">小木屋</div>
+    <div class="tab " page="page2">亂2 技能分配模擬器</div>
+	<div class="tab" page="page3"></div>
+  </div>
+   
+<div class="contents">
+	<div class="pages active" id="page1">
+	<div class="boxs">
+		<div class="top-box">
+			<a a href="https://www.twitch.tv/muou_twitch" target="_blank"><div class="top-icon"style=" background-image: url('images/tw-icon.png')"></div></a>
+			<a a href="https://www.youtube.com/@yt-muou" target="_blank"><div class="top-icon"style=" background-image: url('images/yt-icon.png')"></div></a>
+		</div>
+		<div class="left-box">
+			<div class="icon-line">🫧</div>
+			<h2 class="tittle">關於本站</h2>
+			<div class="tittle-text">本站所有功能僅為個人興趣所做。</br>
+				所有資訊皆從遊戲本身一點一滴記錄並與朋友一同搜集而成，</br>
+				內容與功能僅供玩家們參考，並不保證內容與遊戲一致!!</br>
+				如有資訊錯誤、資料補充、意見回饋等，歡迎提出。</br></br>
+			</div>
+			<div class="icon-line">🫧</div>
+			<h2 class="tittle">亂2 新大阪歷程</h2>
+			<li class="tittle-text">2025/07/14 新大阪伺服器上線 (上限Lv200)</li>
+			</br>
+			<div class="icon-line">🫧</div>
+			<h2 class="tittle">使用守則</h2>
+			<div class="tittle-text">歡迎分享、合理範圍使用。</div>
+		</div>
+	</div>
+	<div class="visitor-counter" id="visitor-count">載入中...</div>
+	
+	</div>
+	<div class="pages" id="page2">
+		<div class="skill-columns">
+			<div class="column"><div class="text1">速弓(敏)</div><div class="skill-container" id="agiList"></div></div>
+			<div class="column"><div class="text1">強弓(力)</div><div class="skill-container" id="strList"></div></div>
+			<div class="column"><div class="text1">精弓(精)</div><div class="skill-container" id="intList"></div></div>
+			<div class="column"><div class="text1">共通</div><div class="skill-container" id="comList"></div></div> 
+			<div class="column">
+			<div>
+			使用技能點數：<span id="uesedpoints">0</span><br>
+			需要敏捷：<span id="maxagi">0</span><br>
+			需要力量：<span id="maxstr">0</span><br>
+			需要精神：<span id="maxint">0</span>
+			</div></br>
+				<div><button class="btnreset" onclick="reset()">重置</button></div>
+			</div>
+		</div>
+		<div>
+		 <ul id="news-list">
+		  <!-- 動態插入內容 -->
+		</ul>
+		</div>
+	</div>
+	<div class="pages" id="page3"></div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
